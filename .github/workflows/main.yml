@@ -34,7 +34,7 @@ jobs:
 
     - name: Set password for SSH
       run: |
-        echo 'username:P@ssw0rd!' | sudo chpasswd
+       echo -e "P@ssw0rd!\nP@ssw0rd!" | sudo passwd username
 
     - name: Start ngrok tunnel
       run: |
